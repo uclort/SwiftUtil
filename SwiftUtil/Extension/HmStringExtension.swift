@@ -10,12 +10,12 @@ import Foundation
 extension String {
     //将原始的url编码为合法的url
     func urlEncoded() -> String {
-        self.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+        addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
     }
     
     //将编码后的url转换回原始的url
     func urlDecoded() -> String {
-        self.removingPercentEncoding ?? ""
+        removingPercentEncoding ?? ""
     }
     
     /// 从开始截取字符串
@@ -75,8 +75,7 @@ extension String {
     
     /// 本地化字符内容
     func localizedString(_ comment: String = "") -> String {
-        let localString = NSLocalizedString(self, comment: comment)
-        return localString
+        NSLocalizedString(self, comment: comment)
     }
     
     /// 转成 NSNumber

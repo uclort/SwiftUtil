@@ -39,29 +39,25 @@ extension Date {
     /// 是否为今天
     /// - Returns: true 则为今天
     func isToday() -> Bool {
-        let calendar = NSCalendar.current
-        return calendar.isDateInToday(self)
+        NSCalendar.current.isDateInToday(self)
     }
     
     /// 是否为昨天
     /// - Returns: true 则为昨天
     func isYesterday() -> Bool {
-        let calendar = NSCalendar.current
-        return calendar.isDateInYesterday(self)
+        NSCalendar.current.isDateInYesterday(self)
     }
     
     /// 是否为明天
     /// - Returns: true 则为明天
     func isTomorrow() -> Bool {
-        let calendar = NSCalendar.current
-        return calendar.isDateInTomorrow(self)
+        NSCalendar.current.isDateInTomorrow(self)
     }
     
     /// 是否为周末
     /// - Returns: true 则为周末
     func isWeekend() -> Bool {
-        let calendar = NSCalendar.current
-        return calendar.isDateInWeekend(self)
+        NSCalendar.current.isDateInWeekend(self)
     }
     
     /// 格式化为指定格式
@@ -79,6 +75,6 @@ extension Date {
     }
     
     func timeInterval() -> TimeInterval {
-        return self.timeIntervalSince1970
+        timeIntervalSince1970
     }
 }
