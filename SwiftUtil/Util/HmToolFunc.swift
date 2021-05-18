@@ -17,17 +17,11 @@ func dPrint(_ any : Any?) {
 }
 
 func Image(imageName: String) -> UIImage? {
-    guard let image = UIImage(named: imageName) else {
-        return nil
-    }
-    return image
+    UIImage(named: imageName)
 }
 
 func ImageSystem(imageName: String) -> UIImage? {
-    guard let image = UIImage(systemName: imageName) else {
-        return nil
-    }
-    return image
+    UIImage(systemName: imageName)
 }
 
 func Font(size: CGFloat, bold: Bool = false) -> UIFont {

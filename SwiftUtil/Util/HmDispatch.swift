@@ -21,7 +21,7 @@ public class HmDispatch {
     // MARK: 异步延迟
     @discardableResult
     public static func asyncDelay(_ seconds: Double, task: @escaping Task, mainTask: Task? = nil) -> DispatchWorkItem {
-        return _asyncDelay(seconds, task, mainTask)
+        _asyncDelay(seconds, task, mainTask)
     }
 
     private static func _asyncDelay(_ seconds: Double, _ task: @escaping Task, _ mainTask: Task?) -> DispatchWorkItem {

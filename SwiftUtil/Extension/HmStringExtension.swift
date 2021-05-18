@@ -21,7 +21,7 @@ extension String {
     /// 从开始截取字符串
     func intercept_prefix(_ maxLength: Int) -> String {
         if maxLength > count {
-            return String(prefix(count))
+            return self
         }
         return String(prefix(maxLength))
     }
@@ -29,7 +29,7 @@ extension String {
     /// 从结尾截取字符串
     func intercept_suffix(_ maxLength: Int) -> String {
         if maxLength > count {
-            return String(suffix(count))
+            return self
         }
         return String(suffix(maxLength))
     }

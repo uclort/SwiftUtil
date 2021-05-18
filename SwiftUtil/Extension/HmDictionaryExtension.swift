@@ -24,8 +24,7 @@ extension Dictionary where Key == String {
     }
     
     func hm_dictionaryForKey(_ key: String) -> [String: Any]? {
-        let value = (self[key] as? [String: Any]) ?? [:]
-        return value
+        self[key] as? [String: Any]
     }
     
     func hm_floatForKey(_ key: String) -> Double? {
@@ -36,9 +35,8 @@ extension Dictionary where Key == String {
             return valueFloat
         } else if let valueString = value as? String {
             return valueString.doubleValue
-        } else {
-            return nil
         }
+        return nil
     }
     
     func hm_intForKey(_ key: String) -> Int? {
@@ -49,9 +47,8 @@ extension Dictionary where Key == String {
             return valueFloat.intValue
         } else if let valueString = value as? String {
             return valueString.intValue
-        } else {
-            return nil
         }
+        return nil
     }
     
     func hm_boolForKey(_ key: String) -> Bool? {
@@ -62,9 +59,8 @@ extension Dictionary where Key == String {
             return valueBool
         } else if let valueString = value as? String {
             return valueString.boolValue
-        } else {
-            return nil
         }
+        return nil
     }
     
     func merge(_ otherDictionary: [String: Any]?) -> [String: Any] {

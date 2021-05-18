@@ -44,10 +44,10 @@ extension UIColor {
     }
     
     class func rgb(_ red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat = 1.0) -> UIColor {
-        return UIColor(red: red / 255.0,
-                       green: green / 255.0,
-                       blue: blue / 255.0,
-                       alpha: alpha)
+        UIColor(red: red / 255.0,
+                green: green / 255.0,
+                blue: blue / 255.0,
+                alpha: alpha)
     }
     
     func asImage(_ size: CGSize? = CGSize(width: 1, height: 1)) -> UIImage? {
