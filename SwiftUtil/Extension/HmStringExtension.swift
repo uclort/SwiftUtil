@@ -78,11 +78,6 @@ extension String {
         NSLocalizedString(self, comment: comment)
     }
     
-    /// 转成 NSNumber
-    func toNumber() -> NSNumber? {
-        NumberFormatter().number(from: self)
-    }
-    
     /// 转成 Date
     func toDate(type: Date.DateFormatterType = .year_month_day) -> Date? {
         let dateFormatter = DateFormatter()
@@ -100,9 +95,22 @@ extension String {
     func toDateString(type: Date.DateFormatterType = .year_month_day) -> String? {
         timeIntervalValue?.toDateString(type: type)
     }
+    
+    func toDictionary() -> [String : Any]? {
+        let data = self.data(using: String.Encoding.utf8)
+        if let dict = try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String : Any] {
+            return dict
+        }
+        return nil
+    }
 }
 
 extension String { // Type Conversion
+    
+    /// 转成 NSNumber
+    func toNumber() -> NSNumber? {
+        NumberFormatter().number(from: self)
+    }
     
     var intValue: Int? {
         toNumber()?.intValue

@@ -264,3 +264,11 @@ extension UIView {
         }
     }
 }
+
+extension UIView {
+    @discardableResult
+    func backgroundColor(color: UIColor) -> Self {
+        self.backgroundColor = backgroundColor
+        return self
+    }
+}

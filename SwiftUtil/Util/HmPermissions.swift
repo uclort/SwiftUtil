@@ -16,14 +16,14 @@ class HmPermissions {
         let authStatus = AVCaptureDevice.authorizationStatus(for: .video)
         switch authStatus {
         case .restricted, .denied:
-            print("权限已拒绝")
+            dPrint("权限已拒绝")
         case .notDetermined:
             AVCaptureDevice.requestAccess(for: .video) { (success) in
                 DispatchQueue.main.async(execute: {
                     if success {
                         complete()
                     } else {
-                        print("权限已拒绝")
+                        dPrint("权限已拒绝")
                     }
                 })
             }
@@ -39,14 +39,14 @@ class HmPermissions {
         let photoAuthorStatus = PHPhotoLibrary.authorizationStatus()
         switch photoAuthorStatus {
         case .denied, .restricted:
-            print("权限已拒绝")
+            dPrint("权限已拒绝")
         case .notDetermined:
             PHPhotoLibrary.requestAuthorization { (status) in
                 DispatchQueue.main.async(execute: {
                     if status == .authorized {
                         complete()
                     } else {
-                        print("权限已拒绝")
+                        dPrint("权限已拒绝")
                     }
                 })
             }

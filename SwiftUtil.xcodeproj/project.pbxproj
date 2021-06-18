@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5335FF8266DB13B0095105C /* HmLabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5335FF7266DB13B0095105C /* HmLabelExtension.swift */; };
 		D5672A852645424100FF9FE9 /* HmDictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5672A842645424100FF9FE9 /* HmDictionaryExtension.swift */; };
 		D5672A882645427600FF9FE9 /* HmNumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5672A872645427600FF9FE9 /* HmNumberExtension.swift */; };
 		D5672A8B264546BD00FF9FE9 /* HmViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5672A8A264546BD00FF9FE9 /* HmViewExtension.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D5335FF7266DB13B0095105C /* HmLabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmLabelExtension.swift; sourceTree = "<group>"; };
 		D5672A842645424100FF9FE9 /* HmDictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmDictionaryExtension.swift; sourceTree = "<group>"; };
 		D5672A872645427600FF9FE9 /* HmNumberExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmNumberExtension.swift; sourceTree = "<group>"; };
 		D5672A8A264546BD00FF9FE9 /* HmViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmViewExtension.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				D5672A8A264546BD00FF9FE9 /* HmViewExtension.swift */,
 				D591BD042646289E00E186A4 /* HmViewControllerExtension.swift */,
 				D591BD072646298000E186A4 /* HmRectExtension.swift */,
+				D5335FF7266DB13B0095105C /* HmLabelExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				D591BD0B264634C500E186A4 /* HmPermissions.swift in Sources */,
 				D5F797EF26451E1E00B760E6 /* HmStringExtension.swift in Sources */,
 				D5F797D62645118900B760E6 /* ViewController.swift in Sources */,
+				D5335FF8266DB13B0095105C /* HmLabelExtension.swift in Sources */,
 				D591BD0E2646361000E186A4 /* HmTool.swift in Sources */,
 				D5F797D22645118900B760E6 /* AppDelegate.swift in Sources */,
 				D591BD052646289E00E186A4 /* HmViewControllerExtension.swift in Sources */,
