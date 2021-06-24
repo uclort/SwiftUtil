@@ -16,6 +16,7 @@
 		D5788F2226817AC900674AF2 /* HmBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5788F2126817AC900674AF2 /* HmBaseViewController.swift */; };
 		D5788F2726817B0D00674AF2 /* HmKeyBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5788F2626817B0D00674AF2 /* HmKeyBoardViewController.swift */; };
 		D5788F362681822600674AF2 /* HmTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5788F352681822600674AF2 /* HmTextField.swift */; };
+		D5788F942684302900674AF2 /* HmNavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5788F932684302900674AF2 /* HmNavigationControllerExtension.swift */; };
 		D591BD052646289E00E186A4 /* HmViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D591BD042646289E00E186A4 /* HmViewControllerExtension.swift */; };
 		D591BD082646298000E186A4 /* HmRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D591BD072646298000E186A4 /* HmRectExtension.swift */; };
 		D591BD0B264634C500E186A4 /* HmPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D591BD0A264634C500E186A4 /* HmPermissions.swift */; };
@@ -47,6 +48,7 @@
 		D5788F2126817AC900674AF2 /* HmBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HmBaseViewController.swift; sourceTree = "<group>"; };
 		D5788F2626817B0D00674AF2 /* HmKeyBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmKeyBoardViewController.swift; sourceTree = "<group>"; };
 		D5788F352681822600674AF2 /* HmTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmTextField.swift; sourceTree = "<group>"; };
+		D5788F932684302900674AF2 /* HmNavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmNavigationControllerExtension.swift; sourceTree = "<group>"; };
 		D591BD042646289E00E186A4 /* HmViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmViewControllerExtension.swift; sourceTree = "<group>"; };
 		D591BD072646298000E186A4 /* HmRectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmRectExtension.swift; sourceTree = "<group>"; };
 		D591BD0A264634C500E186A4 /* HmPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmPermissions.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				D5F797EE26451E1E00B760E6 /* HmStringExtension.swift */,
 				D591BD042646289E00E186A4 /* HmViewControllerExtension.swift */,
 				D5672A8A264546BD00FF9FE9 /* HmViewExtension.swift */,
+				D5788F932684302900674AF2 /* HmNavigationControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5F797FA264531EE00B760E6 /* HmColorExtension.swift in Sources */,
+				D5788F942684302900674AF2 /* HmNavigationControllerExtension.swift in Sources */,
 				D5F797F2264523A900B760E6 /* HmArrayExtension.swift in Sources */,
 				D591BD082646298000E186A4 /* HmRectExtension.swift in Sources */,
 				D5672A852645424100FF9FE9 /* HmDictionaryExtension.swift in Sources */,
