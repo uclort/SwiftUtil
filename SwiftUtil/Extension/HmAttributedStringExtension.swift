@@ -7,20 +7,26 @@
 
 import UIKit
 
+enum HmAttributedStringKey {
+    /// 文字字体
+    case font(UIFont)
+    /// 文字颜色
+    case foregroundColor(UIColor)
+}
+
 extension NSMutableAttributedString {
-    func addAttributeColor(_ color: UIColor, rangeString: String) {
-        addAttribute(.foregroundColor, value: color, range: range(of: rangeString))
+    func gm_addAttribute(_ keys: HmAttributedStringKey..., rangeString: String = "") {
+        keys.forEach { key in
+            switch key {
+            case .font(let value):
+                addAttribute(.font, value: value, range: hm_range(of: rangeString))
+            case .foregroundColor(let value):
+                addAttribute(.foregroundColor, value: value, range: hm_range(of: rangeString))
+            }
+        }
     }
 
-    func addAttributeFont(_ font: UIFont, rangeString: String) {
-        addAttribute(.font, value: font, range: range(of: rangeString))
-    }
-
-    func addAttribute(_ attrs: [NSAttributedString.Key: Any], rangeString: String) {
-        addAttributes(attrs, range: range(of: rangeString))
-    }
-
-    func range(of string: String = "") -> NSRange {
-        self.string.range(of: string)
+    func hm_range(of string: String = "") -> NSRange {
+        self.string.hm_range(of: string)
     }
 }

@@ -12,6 +12,7 @@
 		D5672A852645424100FF9FE9 /* HmDictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5672A842645424100FF9FE9 /* HmDictionaryExtension.swift */; };
 		D5672A882645427600FF9FE9 /* HmNumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5672A872645427600FF9FE9 /* HmNumberExtension.swift */; };
 		D5672A8B264546BD00FF9FE9 /* HmViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5672A8A264546BD00FF9FE9 /* HmViewExtension.swift */; };
+		D567F63526929B9D00CA2D03 /* HmStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D567F63426929B9D00CA2D03 /* HmStackViewController.swift */; };
 		D5788F1E26817AC300674AF2 /* HmSnapKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5788F1D26817AC300674AF2 /* HmSnapKitExtension.swift */; };
 		D5788F2226817AC900674AF2 /* HmBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5788F2126817AC900674AF2 /* HmBaseViewController.swift */; };
 		D5788F2726817B0D00674AF2 /* HmKeyBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5788F2626817B0D00674AF2 /* HmKeyBoardViewController.swift */; };
@@ -44,6 +45,7 @@
 		D5672A842645424100FF9FE9 /* HmDictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmDictionaryExtension.swift; sourceTree = "<group>"; };
 		D5672A872645427600FF9FE9 /* HmNumberExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmNumberExtension.swift; sourceTree = "<group>"; };
 		D5672A8A264546BD00FF9FE9 /* HmViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmViewExtension.swift; sourceTree = "<group>"; };
+		D567F63426929B9D00CA2D03 /* HmStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmStackViewController.swift; sourceTree = "<group>"; };
 		D5788F1D26817AC300674AF2 /* HmSnapKitExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HmSnapKitExtension.swift; sourceTree = "<group>"; };
 		D5788F2126817AC900674AF2 /* HmBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HmBaseViewController.swift; sourceTree = "<group>"; };
 		D5788F2626817B0D00674AF2 /* HmKeyBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmKeyBoardViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D567F63326929B5300CA2D03 /* UIStackView */ = {
+			isa = PBXGroup;
+			children = (
+				D567F63426929B9D00CA2D03 /* HmStackViewController.swift */,
+			);
+			path = UIStackView;
+			sourceTree = "<group>";
+		};
 		D5788F2026817AC900674AF2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				D5788F342681821400674AF2 /* HmCustomControl */,
+				D567F63326929B5300CA2D03 /* UIStackView */,
 				D5788F2526817AE800674AF2 /* UITextField */,
 			);
 			path = Example;
@@ -329,6 +340,7 @@
 				D5335FF8266DB13B0095105C /* HmLabelExtension.swift in Sources */,
 				D5788F2226817AC900674AF2 /* HmBaseViewController.swift in Sources */,
 				D591BD0E2646361000E186A4 /* HmTool.swift in Sources */,
+				D567F63526929B9D00CA2D03 /* HmStackViewController.swift in Sources */,
 				D5F797D22645118900B760E6 /* AppDelegate.swift in Sources */,
 				D591BD052646289E00E186A4 /* HmViewControllerExtension.swift in Sources */,
 				D5788F1E26817AC300674AF2 /* HmSnapKitExtension.swift in Sources */,

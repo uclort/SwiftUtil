@@ -34,7 +34,7 @@ extension String {
         return String(suffix(maxLength))
     }
     
-    func range(of string: String = "") -> NSRange {
+    func hm_range(of string: String = "") -> NSRange {
         let nsstring = self as NSString
         guard string.isEmpty == false else {
             return nsstring.range(of: self)
@@ -43,13 +43,13 @@ extension String {
     }
     
     // 替换字符串中的内容
-    func replace(of: String, with: String) -> String {
+    func hm_replace(of: String, with: String) -> String {
         replacingOccurrences(of: of, with: with)
     }
     
     /// 解析 URL 获取 URL 所携带参数
     /// - Returns: URL 携带参数集合
-    func getUrlParameter() -> [String: Any] {
+    func hm_getUrlParameter() -> [String: Any] {
         var parameters: [String: Any] = [:]
         guard let url = URL(string: self) else {
             return parameters

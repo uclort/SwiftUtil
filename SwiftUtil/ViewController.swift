@@ -9,6 +9,7 @@ import UIKit
 
 enum ControllerData: String, CaseIterable {
     case keyBoardType = "UITextField.keyBoardType"
+    case stackView = "UIStackView"
 }
 
 class ViewController: HmBaseViewController {
@@ -41,6 +42,8 @@ extension ViewController {
         switch type {
         case .keyBoardType:
             targetPage = HmKeyBoardViewController()
+        case .stackView:
+            targetPage = HmStackViewController()
         }
         guard let target = targetPage else {
             return
