@@ -8,7 +8,7 @@
 import UIKit
 
 /// 可复用协议
-protocol Reusable: class {
+protocol Reusable: AnyObject {
     /// 复用的id
     static var identifier: String { get }
 }

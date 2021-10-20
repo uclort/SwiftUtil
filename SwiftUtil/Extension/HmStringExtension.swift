@@ -103,6 +103,10 @@ extension String {
         }
         return nil
     }
+    
+    func toPrint() {
+        dPrint(self)
+    }
 }
 
 extension String { // Type Conversion

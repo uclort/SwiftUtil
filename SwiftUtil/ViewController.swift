@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PromiseKit
 
 enum ControllerData: String, CaseIterable {
     case keyBoardType = "UITextField.keyBoardType"
@@ -31,6 +32,35 @@ class ViewController: HmBaseViewController {
     override func addCustomControlConstraint() {
         mainTableView.snp.makeConstraints { (maker) in
             maker.edges.equalToSuperview()
+        }
+    }
+    
+    override func sendHandler() {
+        let object1 = HmViewModel.default.requestTest1()
+        let object2 = HmViewModel.default.requestTest2()
+        firstly {
+            when(fulfilled: object1.promise, object2.promise)
+        }.done { model, models in
+            dPrint("1 和 2 全部请求完成")
+            dPrint(model)
+            dPrint(models)
+        }.catch { error in
+            dPrint(error)
+        }.finally {
+            firstly {
+                object1.promise
+            }.then { model -> Promise<[RootRoot]?> in
+                dPrint("1 请求完毕")
+                dPrint(model)
+                return object2.promise
+            }.done {
+                dPrint("2 请求完毕")
+                dPrint($0)
+            }.catch { error in
+                dPrint(error)
+            }.finally {
+                
+            }
         }
     }
 

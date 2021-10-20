@@ -77,13 +77,17 @@ extension Dictionary where Key == String {
         return newDictionary
     }
     
-    func toJsonString() -> String? {
-        if (!JSONSerialization.isValidJSONObject(self)) {
-            print("is not a valid json object")
+    func toJsonString(pretty: Bool = true, sort: Bool = false) -> String? {
+        var options: JSONSerialization.WritingOptions = []
+        if pretty {
+            options.insert(.prettyPrinted)
+        }
+        if sort {
+            options.insert(.sortedKeys)
+        }
+        guard JSONSerialization.isValidJSONObject(self), let data = try? JSONSerialization.data(withJSONObject: self, options: options) else {
             return nil
         }
-        let data = try? JSONSerialization.data(withJSONObject: self, options: [])
-        let str = String(data:data!, encoding: String.Encoding.utf8)
-        return str
+        return String(data:data, encoding: String.Encoding.utf8)
     }
 }
