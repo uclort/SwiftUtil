@@ -8,11 +8,11 @@
 import Foundation
 import UIKit
 
-public typealias Task = () -> Void
+public typealias HmTask = () -> Void
 
 public class HmDispatch {
     @discardableResult
-    public static func delay(_ seconds: Double, _ action: @escaping Task) -> DispatchWorkItem {
+    public static func delay(_ seconds: Double, _ action: @escaping HmTask) -> DispatchWorkItem {
         let workItem = DispatchWorkItem(block: action)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + seconds, execute: workItem)
         return workItem
@@ -20,15 +20,15 @@ public class HmDispatch {
     
     // MARK: 异步延迟
     @discardableResult
-    public static func asyncDelay(_ seconds: Double, task: @escaping Task, mainTask: Task? = nil) -> DispatchWorkItem {
-        _asyncDelay(seconds, task, mainTask)
+    public static func asyncDelay(_ seconds: Double, task: @escaping HmTask, mainHmTask: HmTask? = nil) -> DispatchWorkItem {
+        _asyncDelay(seconds, task, mainHmTask)
     }
 
-    private static func _asyncDelay(_ seconds: Double, _ task: @escaping Task, _ mainTask: Task?) -> DispatchWorkItem {
+    private static func _asyncDelay(_ seconds: Double, _ task: @escaping HmTask, _ mainHmTask: HmTask?) -> DispatchWorkItem {
         let workItem = DispatchWorkItem(block: task)
         DispatchQueue.global().asyncAfter(deadline: DispatchTime.now() + seconds, execute: workItem)
-        if let mainTask = mainTask {
-            workItem.notify(queue: DispatchQueue.main, execute: mainTask)
+        if let mainHmTask = mainHmTask {
+            workItem.notify(queue: DispatchQueue.main, execute: mainHmTask)
         }
         return workItem
     }

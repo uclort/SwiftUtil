@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B0E5443280D49D90097B99C /* await_async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0E5442280D49D90097B99C /* await_async.swift */; };
+		4B95E07827E95DEA001C7446 /* HmTestCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B95E07727E95DEA001C7446 /* HmTestCode.swift */; };
+		4BB4CA5F27E1CC57008ACABC /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4BB4CA5E27E1CC57008ACABC /* IQKeyboardManagerSwift */; };
+		4BD82F3227E1CCFB0087D4DD /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD82F3127E1CCFB0087D4DD /* SnapKit */; };
+		4BD82F3527E1CD630087D4DD /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD82F3427E1CD630087D4DD /* PromiseKit */; };
+		4BD82F3827E1CD790087D4DD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD82F3727E1CD790087D4DD /* Alamofire */; };
+		4BD82F3B27E1CD8C0087D4DD /* HandyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD82F3A27E1CD8C0087D4DD /* HandyJSON */; };
+		4BD82F3E27E1CD9F0087D4DD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD82F3D27E1CD9F0087D4DD /* Kingfisher */; };
+		4BD82F4127E1CDD20087D4DD /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD82F4027E1CDD20087D4DD /* RxBlocking */; };
+		4BD82F4327E1CDD30087D4DD /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD82F4227E1CDD30087D4DD /* RxCocoa */; };
+		4BD82F4527E1CDD30087D4DD /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD82F4427E1CDD30087D4DD /* RxRelay */; };
+		4BD82F4727E1CDD30087D4DD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD82F4627E1CDD30087D4DD /* RxSwift */; };
+		4BD82F4A27E1CE140087D4DD /* HmKingFisherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD82F4927E1CE140087D4DD /* HmKingFisherVC.swift */; };
+		4BD82F4D27E1CF490087D4DD /* LookinServer in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD82F4C27E1CF490087D4DD /* LookinServer */; };
 		D5335FF8266DB13B0095105C /* HmLabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5335FF7266DB13B0095105C /* HmLabelExtension.swift */; };
 		D5672A852645424100FF9FE9 /* HmDictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5672A842645424100FF9FE9 /* HmDictionaryExtension.swift */; };
 		D5672A882645427600FF9FE9 /* HmNumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5672A872645427600FF9FE9 /* HmNumberExtension.swift */; };
@@ -22,16 +36,8 @@
 		D591BD0B264634C500E186A4 /* HmPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D591BD0A264634C500E186A4 /* HmPermissions.swift */; };
 		D591BD0E2646361000E186A4 /* HmTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D591BD0D2646361000E186A4 /* HmTool.swift */; };
 		D591BD112646362400E186A4 /* HmToolFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D591BD102646362400E186A4 /* HmToolFunc.swift */; };
-		D5964A2B26DF568100BA3B01 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D5964A2A26DF568100BA3B01 /* IQKeyboardManagerSwift */; };
-		D5964A2E26DF56DF00BA3B01 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D5964A2D26DF56DF00BA3B01 /* SnapKit */; };
-		D5964A3126DF5BDD00BA3B01 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D5964A3026DF5BDD00BA3B01 /* RxRelay */; };
-		D5964A3326DF5BDD00BA3B01 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D5964A3226DF5BDD00BA3B01 /* RxSwift */; };
-		D5964A3526DF5BDD00BA3B01 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D5964A3426DF5BDD00BA3B01 /* RxCocoa */; };
-		D5964A3826DF63B900BA3B01 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = D5964A3726DF63B900BA3B01 /* PromiseKit */; };
-		D5964A3B26DF692F00BA3B01 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D5964A3A26DF692F00BA3B01 /* Alamofire */; };
 		D5964A3E26DF7F6D00BA3B01 /* HmRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5964A3D26DF7F6D00BA3B01 /* HmRequest.swift */; };
 		D5964A4026E09C8600BA3B01 /* HmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5964A3F26E09C8600BA3B01 /* HmViewModel.swift */; };
-		D5964A4526E0AEB100BA3B01 /* HandyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = D5964A4426E0AEB100BA3B01 /* HandyJSON */; };
 		D5964A4926E0B6DE00BA3B01 /* HmDataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5964A4826E0B6DE00BA3B01 /* HmDataExtension.swift */; };
 		D5964A4B26E0BBCC00BA3B01 /* HmApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5964A4A26E0BBCC00BA3B01 /* HmApi.swift */; };
 		D5F797D22645118900B760E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F797D12645118900B760E6 /* AppDelegate.swift */; };
@@ -49,6 +55,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B0E5442280D49D90097B99C /* await_async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = await_async.swift; sourceTree = "<group>"; };
+		4B95E07727E95DEA001C7446 /* HmTestCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmTestCode.swift; sourceTree = "<group>"; };
+		4BD82F4927E1CE140087D4DD /* HmKingFisherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmKingFisherVC.swift; sourceTree = "<group>"; };
 		D5335FF7266DB13B0095105C /* HmLabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmLabelExtension.swift; sourceTree = "<group>"; };
 		D5672A842645424100FF9FE9 /* HmDictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmDictionaryExtension.swift; sourceTree = "<group>"; };
 		D5672A872645427600FF9FE9 /* HmNumberExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmNumberExtension.swift; sourceTree = "<group>"; };
@@ -89,14 +98,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5964A3126DF5BDD00BA3B01 /* RxRelay in Frameworks */,
-				D5964A3B26DF692F00BA3B01 /* Alamofire in Frameworks */,
-				D5964A3826DF63B900BA3B01 /* PromiseKit in Frameworks */,
-				D5964A2E26DF56DF00BA3B01 /* SnapKit in Frameworks */,
-				D5964A3526DF5BDD00BA3B01 /* RxCocoa in Frameworks */,
-				D5964A3326DF5BDD00BA3B01 /* RxSwift in Frameworks */,
-				D5964A2B26DF568100BA3B01 /* IQKeyboardManagerSwift in Frameworks */,
-				D5964A4526E0AEB100BA3B01 /* HandyJSON in Frameworks */,
+				4BD82F4527E1CDD30087D4DD /* RxRelay in Frameworks */,
+				4BD82F3E27E1CD9F0087D4DD /* Kingfisher in Frameworks */,
+				4BD82F4727E1CDD30087D4DD /* RxSwift in Frameworks */,
+				4BB4CA5F27E1CC57008ACABC /* IQKeyboardManagerSwift in Frameworks */,
+				4BD82F3827E1CD790087D4DD /* Alamofire in Frameworks */,
+				4BD82F4D27E1CF490087D4DD /* LookinServer in Frameworks */,
+				4BD82F3527E1CD630087D4DD /* PromiseKit in Frameworks */,
+				4BD82F3B27E1CD8C0087D4DD /* HandyJSON in Frameworks */,
+				4BD82F3227E1CCFB0087D4DD /* SnapKit in Frameworks */,
+				4BD82F4327E1CDD30087D4DD /* RxCocoa in Frameworks */,
+				4BD82F4127E1CDD20087D4DD /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +120,22 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B0E5441280D49B90097B99C /* await_async */ = {
+			isa = PBXGroup;
+			children = (
+				4B0E5442280D49D90097B99C /* await_async.swift */,
+			);
+			path = await_async;
+			sourceTree = "<group>";
+		};
+		4BD82F4827E1CE050087D4DD /* KingFisher */ = {
+			isa = PBXGroup;
+			children = (
+				4BD82F4927E1CE140087D4DD /* HmKingFisherVC.swift */,
+			);
+			path = KingFisher;
 			sourceTree = "<group>";
 		};
 		D567F63326929B5300CA2D03 /* UIStackView */ = {
@@ -129,6 +157,8 @@
 		D5788F2426817ADF00674AF2 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				4B0E5441280D49B90097B99C /* await_async */,
+				4BD82F4827E1CE050087D4DD /* KingFisher */,
 				D5788F342681821400674AF2 /* HmCustomControl */,
 				D567F63326929B5300CA2D03 /* UIStackView */,
 				D5788F2526817AE800674AF2 /* UITextField */,
@@ -189,6 +219,7 @@
 				D5F797D12645118900B760E6 /* AppDelegate.swift */,
 				D5F797D32645118900B760E6 /* SceneDelegate.swift */,
 				D5F797D52645118900B760E6 /* ViewController.swift */,
+				4B95E07727E95DEA001C7446 /* HmTestCode.swift */,
 				D5F797D72645118900B760E6 /* Main.storyboard */,
 				D5F797DA2645118D00B760E6 /* Assets.xcassets */,
 				D5F797DC2645118D00B760E6 /* LaunchScreen.storyboard */,
@@ -247,14 +278,17 @@
 			);
 			name = SwiftUtil;
 			packageProductDependencies = (
-				D5964A2A26DF568100BA3B01 /* IQKeyboardManagerSwift */,
-				D5964A2D26DF56DF00BA3B01 /* SnapKit */,
-				D5964A3026DF5BDD00BA3B01 /* RxRelay */,
-				D5964A3226DF5BDD00BA3B01 /* RxSwift */,
-				D5964A3426DF5BDD00BA3B01 /* RxCocoa */,
-				D5964A3726DF63B900BA3B01 /* PromiseKit */,
-				D5964A3A26DF692F00BA3B01 /* Alamofire */,
-				D5964A4426E0AEB100BA3B01 /* HandyJSON */,
+				4BB4CA5E27E1CC57008ACABC /* IQKeyboardManagerSwift */,
+				4BD82F3127E1CCFB0087D4DD /* SnapKit */,
+				4BD82F3427E1CD630087D4DD /* PromiseKit */,
+				4BD82F3727E1CD790087D4DD /* Alamofire */,
+				4BD82F3A27E1CD8C0087D4DD /* HandyJSON */,
+				4BD82F3D27E1CD9F0087D4DD /* Kingfisher */,
+				4BD82F4027E1CDD20087D4DD /* RxBlocking */,
+				4BD82F4227E1CDD30087D4DD /* RxCocoa */,
+				4BD82F4427E1CDD30087D4DD /* RxRelay */,
+				4BD82F4627E1CDD30087D4DD /* RxSwift */,
+				4BD82F4C27E1CF490087D4DD /* LookinServer */,
 			);
 			productName = SwiftUtil;
 			productReference = D5F797CE2645118900B760E6 /* SwiftUtil.app */;
@@ -284,12 +318,14 @@
 			);
 			mainGroup = D5F797C52645118900B760E6;
 			packageReferences = (
-				D5964A2926DF568100BA3B01 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-				D5964A2C26DF56DE00BA3B01 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				D5964A2F26DF5BDD00BA3B01 /* XCRemoteSwiftPackageReference "RxSwift" */,
-				D5964A3626DF63B900BA3B01 /* XCRemoteSwiftPackageReference "PromiseKit" */,
-				D5964A3926DF692F00BA3B01 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				D5964A4326E0AEB100BA3B01 /* XCRemoteSwiftPackageReference "HandyJSON" */,
+				4BB4CA5D27E1CC57008ACABC /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				4BD82F3027E1CCFB0087D4DD /* XCRemoteSwiftPackageReference "SnapKit" */,
+				4BD82F3327E1CD630087D4DD /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				4BD82F3627E1CD790087D4DD /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4BD82F3927E1CD8C0087D4DD /* XCRemoteSwiftPackageReference "HandyJSON" */,
+				4BD82F3C27E1CD9F0087D4DD /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				4BD82F3F27E1CDD20087D4DD /* XCRemoteSwiftPackageReference "RxSwift" */,
+				4BD82F4B27E1CF490087D4DD /* XCRemoteSwiftPackageReference "LookinServer" */,
 			);
 			productRefGroup = D5F797CF2645118900B760E6 /* Products */;
 			projectDirPath = "";
@@ -322,8 +358,11 @@
 				D5788F942684302900674AF2 /* HmNavigationControllerExtension.swift in Sources */,
 				D5F797F2264523A900B760E6 /* HmArrayExtension.swift in Sources */,
 				D591BD082646298000E186A4 /* HmRectExtension.swift in Sources */,
+				4B0E5443280D49D90097B99C /* await_async.swift in Sources */,
 				D5672A852645424100FF9FE9 /* HmDictionaryExtension.swift in Sources */,
 				D5F797F62645309400B760E6 /* HmAttributedStringExtension.swift in Sources */,
+				4BD82F4A27E1CE140087D4DD /* HmKingFisherVC.swift in Sources */,
+				4B95E07827E95DEA001C7446 /* HmTestCode.swift in Sources */,
 				D591BD112646362400E186A4 /* HmToolFunc.swift in Sources */,
 				D5964A4026E09C8600BA3B01 /* HmViewModel.swift in Sources */,
 				D5672A882645427600FF9FE9 /* HmNumberExtension.swift in Sources */,
@@ -493,8 +532,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WKRBRL77BK;
+				DEVELOPMENT_TEAM = 34T4W6WL8A;
 				INFOPLIST_FILE = SwiftUtil/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,6 +543,7 @@
 					D,
 					DEBUG,
 				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
 				PRODUCT_BUNDLE_IDENTIFIER = com.houmeng.SwiftUtil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -516,12 +557,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WKRBRL77BK;
+				DEVELOPMENT_TEAM = 34T4W6WL8A;
 				INFOPLIST_FILE = SwiftUtil/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
 				PRODUCT_BUNDLE_IDENTIFIER = com.houmeng.SwiftUtil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -553,96 +596,127 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D5964A2926DF568100BA3B01 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+		4BB4CA5D27E1CC57008ACABC /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.5.6;
+				branch = master;
+				kind = branch;
 			};
 		};
-		D5964A2C26DF56DE00BA3B01 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		4BD82F3027E1CCFB0087D4DD /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
+				minimumVersion = 5.0.0;
 			};
 		};
-		D5964A2F26DF5BDD00BA3B01 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		4BD82F3327E1CD630087D4DD /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com.cnpmjs.org/ReactiveX/RxSwift.git";
+			repositoryURL = "https://github.com/mxcl/PromiseKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.2.0;
+				minimumVersion = 6.0.0;
 			};
 		};
-		D5964A3626DF63B900BA3B01 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mxcl/PromiseKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.15.3;
-			};
-		};
-		D5964A3926DF692F00BA3B01 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		4BD82F3627E1CD790087D4DD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.4.3;
+				minimumVersion = 5.0.0;
 			};
 		};
-		D5964A4326E0AEB100BA3B01 /* XCRemoteSwiftPackageReference "HandyJSON" */ = {
+		4BD82F3927E1CD8C0087D4DD /* XCRemoteSwiftPackageReference "HandyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/alibaba/HandyJSON.git";
+			repositoryURL = "https://github.com/alibaba/HandyJSON";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.2;
+				minimumVersion = 5.0.0;
+			};
+		};
+		4BD82F3C27E1CD9F0087D4DD /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		4BD82F3F27E1CDD20087D4DD /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		4BD82F4B27E1CF490087D4DD /* XCRemoteSwiftPackageReference "LookinServer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/QMUI/LookinServer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D5964A2A26DF568100BA3B01 /* IQKeyboardManagerSwift */ = {
+		4BB4CA5E27E1CC57008ACABC /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D5964A2926DF568100BA3B01 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			package = 4BB4CA5D27E1CC57008ACABC /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
 		};
-		D5964A2D26DF56DF00BA3B01 /* SnapKit */ = {
+		4BD82F3127E1CCFB0087D4DD /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D5964A2C26DF56DE00BA3B01 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 4BD82F3027E1CCFB0087D4DD /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		D5964A3026DF5BDD00BA3B01 /* RxRelay */ = {
+		4BD82F3427E1CD630087D4DD /* PromiseKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D5964A2F26DF5BDD00BA3B01 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		D5964A3226DF5BDD00BA3B01 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D5964A2F26DF5BDD00BA3B01 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		D5964A3426DF5BDD00BA3B01 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D5964A2F26DF5BDD00BA3B01 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		D5964A3726DF63B900BA3B01 /* PromiseKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D5964A3626DF63B900BA3B01 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			package = 4BD82F3327E1CD630087D4DD /* XCRemoteSwiftPackageReference "PromiseKit" */;
 			productName = PromiseKit;
 		};
-		D5964A3A26DF692F00BA3B01 /* Alamofire */ = {
+		4BD82F3727E1CD790087D4DD /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D5964A3926DF692F00BA3B01 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 4BD82F3627E1CD790087D4DD /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		D5964A4426E0AEB100BA3B01 /* HandyJSON */ = {
+		4BD82F3A27E1CD8C0087D4DD /* HandyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D5964A4326E0AEB100BA3B01 /* XCRemoteSwiftPackageReference "HandyJSON" */;
+			package = 4BD82F3927E1CD8C0087D4DD /* XCRemoteSwiftPackageReference "HandyJSON" */;
 			productName = HandyJSON;
+		};
+		4BD82F3D27E1CD9F0087D4DD /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD82F3C27E1CD9F0087D4DD /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		4BD82F4027E1CDD20087D4DD /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD82F3F27E1CDD20087D4DD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		4BD82F4227E1CDD30087D4DD /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD82F3F27E1CDD20087D4DD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		4BD82F4427E1CDD30087D4DD /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD82F3F27E1CDD20087D4DD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		4BD82F4627E1CDD30087D4DD /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD82F3F27E1CDD20087D4DD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		4BD82F4C27E1CF490087D4DD /* LookinServer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD82F4B27E1CF490087D4DD /* XCRemoteSwiftPackageReference "LookinServer" */;
+			productName = LookinServer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -48,7 +48,7 @@ class HmKeyBoardViewController: HmBaseViewController {
         }
     }
     
-    override func addCustomControlConstraint() {
+    override func addCustomConstraint() {
         mainScrollView.snp.makeConstraints { (maker) in
             maker.edges.equalToSuperview()
         }
