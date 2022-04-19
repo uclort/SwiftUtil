@@ -9,13 +9,13 @@ import Foundation
 import UIKit
 
 class await_async: HmBaseViewController {
-    private var resultString: String = "" {
+    var resultString: String = "" {
         didSet {
             resultLabel.text = resultString
         }
     }
 
-    private var resultLabel: UILabel!
+    var resultLabel: UILabel!
 
     override func addCustomControl() {
         let buttonStackView = UIStackView()
@@ -74,11 +74,35 @@ extension await_async {
             throw error
         }
     }
-
-    // MARK: 请求数据
+    
+    // MARK: 请求数据前进行并检查
+    /// 运行时对 continuation 进行检查是否调用 `resume` 进行返回
+    /// 如果不调用会造成资源泄露。多次调用也会造成问题
     func requestData_throws() async throws -> String {
         do {
             return try await withCheckedThrowingContinuation { continuation in
+                /// 模拟网络请求异步回调
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    let hasError = Int.random(in: 0 ... 1) == 1
+                    if hasError {
+                        continuation.resume(throwing: NSError(domain: "hasError -> \(hasError)", code: 0))
+                    } else {
+                        continuation.resume(returning: "我是结果")
+                    }
+                }
+            }
+        } catch {
+            throw error
+        }
+    }
+    
+    // MARK: 请求数据前不进行检查
+    /// 运行时不会对 continuation 进行检查
+    /// 比 withCheckedThrowingContinuation 性能好
+    /// 先使用 withCheckedThrowingContinuation 测试确认没有问题后正式版可改用 withUnsafeThrowingContinuation
+    func requestData_throws_unsafe() async throws -> String {
+        do {
+            return try await withUnsafeThrowingContinuation { continuation in
                 /// 模拟网络请求异步回调
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                     let hasError = Int.random(in: 0 ... 1) == 1
@@ -112,7 +136,9 @@ extension await_async {
         await requestData()
     }
 
-    // MARK: 请求数据
+    // MARK: 请求数据前进行并检查
+    /// 运行时对 continuation 进行检查是否调用 `resume` 进行返回
+    /// 如果不调用会造成资源泄露。多次调用也会造成问题
     func requestData() async -> String {
         await withCheckedContinuation { continuation in
             /// 模拟网络请求异步回调
@@ -120,5 +146,18 @@ extension await_async {
                 continuation.resume(returning: "我是结果")
             }
         }
+    }
+    
+    // MARK: 请求数据前不进行检查
+    /// 运行时不会对 continuation 进行检查
+    /// 比 withCheckedContinuation 性能好
+    /// 先使用 withCheckedContinuation 测试确认没有问题后正式版可改用 withUnsafeContinuation
+    func requestData_unsafe() async -> String {
+        await withUnsafeContinuation({ continuation in
+            /// 模拟网络请求异步回调
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                continuation.resume(returning: "我是结果")
+            }
+        })
     }
 }
